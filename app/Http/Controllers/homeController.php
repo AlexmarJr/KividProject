@@ -36,12 +36,12 @@ class HomeController extends BaseController
             
    
     public function home(){
-        $dados = DB::table('Cadastro')->get();
+        $dados = DB::table('cadastro')->get();
         return view('home', compact('dados'));
     }
 
     public function option(){
-        $dados = DB::table('Cadastro')->get();
+        $dados = DB::table('cadastro')->get();
         return compact('dados');
     }
 
