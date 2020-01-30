@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+
 
 Route::post('store', 'homeController@store')->name('store');
-Route::get('home', 'homeController@home')->name('home');
+Route::get('/', 'homeController@home')->name('home');
 Route::get('delete/{id?}','homeController@delete')->name('delete');
 Route::get('read/{id?}','homeController@read')->name('read');
 
